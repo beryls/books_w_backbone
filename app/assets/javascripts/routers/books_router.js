@@ -5,7 +5,6 @@ BooksWBackbone.Routers.Books = Backbone.Router.extend({
   initialize: function() {
     this.collection = new BooksWBackbone.Collections.Books();
     this.collection.fetch({reset: true});
-    debugger;
   },
   index: function() {
     var view = new BooksWBackbone.Views.BooksIndex({collection: this.collection});
